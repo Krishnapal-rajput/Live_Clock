@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Meta tags for character encoding and viewport settings -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Title of the webpage -->
     <title>Live Clock</title>
+    
+    <!-- Link to external CSS stylesheet for styling -->
     <link rel="stylesheet" href="style.css" />
+    
+    <!-- Link to external JavaScript file, using 'defer' to ensure it loads after the HTML -->
     <script src="script.js" defer></script>
   </head>
   <body>
+    <!-- Main container that holds the live clock and date -->
     <div class="container">
+      
+      <!-- Heading for the page -->
       <h1>Live Clock</h1>
+      
+      <!-- Section to display the current date with spans for date, month, year, and day -->
       <div class="header">
         <span class="date"></span>:<span class="month"></span>:<span
           class="year"
-        ></span
-        >&nbsp;<span class="day"></span>
+        ></span>&nbsp;<span class="day"></span>
       </div>
+      
+      <!-- Section to display the live clock with spans for hour, minute, and second -->
       <div class="clock">
         <span class="hour"></span>:<span class="min"></span>:<span
           class="second"
