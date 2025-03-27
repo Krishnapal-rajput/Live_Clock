@@ -17,7 +17,7 @@ This project is a simple **Live Clock** that displays the current time and date,
 
 ## Live Demo
 
-You can view the live clock on [Netlify here](YOUR_NETLIFY_LINK_HERE).
+You can view the live clock on [Netlify here](https://myliveclock.netlify.app/).
 
 ## How to Run Locally
 
