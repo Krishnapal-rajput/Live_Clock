@@ -1,36 +1,40 @@
+/* Reset margin and padding for all elements */
 * {
   margin: 0;
   padding: 0;
 }
 
+/* Body styling */
 body {
-  width: 100%;
-  height: 100vh;
-  background-color: #555;
-  font-family: monospace;
-  font-size: 32px;
-  text-align: center;
-  color: #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%; /* Ensure full width of the viewport */
+  height: 100vh; /* Ensure full height of the viewport */
+  background-color: #555; /* Dark background color */
+  font-family: monospace; /* Use monospace font */
+  font-size: 32px; /* Default font size */
+  text-align: center; /* Center-align text */
+  color: #ddd; /* Light text color */
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
 }
 
+/* Styling for the container that holds the clock and date */
 .container {
-  width: 400px;
-  height: 250px;
-  background-color: #999;
-  border-radius: 10px;
-  box-shadow: 0 0 2px 1px #777;
+  width: 400px; /* Set container width */
+  height: 250px; /* Set container height */
+  background-color: #999; /* Light gray background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 2px 1px #777; /* Subtle shadow around the container */
   display: flex; /* Enable flexbox */
-  flex-direction: column; /* Stack children vertically */
-  justify-content: center; /* Vertically center the children */
-  align-items: center; /* Horizontally center the children */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Vertically center children */
+  align-items: center; /* Horizontally center children */
 }
 
+/* Styling for the heading */
 h1 {
-  text-shadow: 1px 1px 2px #bbb;
-  font-weight: bold;
+  text-shadow: 1px 1px 2px #bbb; /* Add subtle shadow to text */
+  font-weight: bold; /* Make the font bold */
 }
 
 /* Responsive Design */
@@ -38,19 +42,19 @@ h1 {
 /* For screens 1440px and larger */
 @media (min-width: 1440px) {
   body {
-    font-size: 32px; /* Base font size for large screens */
+    font-size: 32px; /* Keep font size large for large screens */
   }
   .container {
-    width: 450px;
-    height: 300px;
+    width: 450px; /* Increase container width */
+    height: 300px; /* Increase container height */
   }
 }
 
 /* For screens between 1200px to 1439px */
 @media (min-width: 1200px) and (max-width: 1439px) {
   .container {
-    width: 400px;
-    height: 250px;
+    width: 400px; /* Set container width */
+    height: 250px; /* Set container height */
   }
 }
 
@@ -60,19 +64,19 @@ h1 {
     font-size: 28px; /* Adjust font size for mid-range screens */
   }
   .container {
-    width: 350px;
-    height: 220px;
+    width: 350px; /* Adjust container width */
+    height: 220px; /* Adjust container height */
   }
 }
 
 /* For screens between 768px to 991px */
 @media (min-width: 768px) and (max-width: 991px) {
   body {
-    font-size: 24px; /* Slightly smaller font size for medium screens */
+    font-size: 24px; /* Reduce font size for medium-sized screens */
   }
   .container {
-    width: 300px;
-    height: 200px;
+    width: 300px; /* Adjust container width */
+    height: 200px; /* Adjust container height */
   }
 }
 
@@ -82,42 +86,31 @@ h1 {
     font-size: 20px; /* Smaller font size for smaller screens */
   }
   .container {
-    width: 280px;
-    height: 180px;
+    width: 280px; /* Adjust container width */
+    height: 180px; /* Adjust container height */
   }
 }
 
 /* For screens between 375px to 575px */
 @media (min-width: 375px) and (max-width: 575px) {
   body {
-    font-size: 18px; /* Adjust for smaller devices */
+    font-size: 18px; /* Further reduce font size for smaller devices */
   }
   .container {
-    width: 260px;
-    height: 160px;
+    width: 260px; /* Adjust container width */
+    height: 160px; /* Adjust container height */
   }
 }
 
 /* For screens 374px and below (very small devices) */
 @media (max-width: 374px) {
   body {
-    font-size: 16px; /* Further reduce font size */
+    font-size: 16px; /* Reduce font size for very small screens */
   }
   .container {
-    width: 240px;
-    height: 150px;
+    width: 240px; /* Adjust container width */
+    height: 150px; /* Adjust container height */
   }
 }
-/* For screens up to 275px */
-@media (max-width: 275px) {
-  body {
-    font-size: 14px; /* Further reduce font size for very small devices */
-  }
-  .container {
-    width: 200px; /* Smaller container for very small screens */
-    height: 130px; /* Adjust height to fit smaller screens */
-  }
-  h1 {
-    font-size: 18px; /* Reduce heading font size for smaller screens */
-  }
-}
+
+/* For screens up to 275px (extremely small devices)*
